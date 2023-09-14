@@ -4,7 +4,11 @@ const port = 3001;
 
 //index endpoint
 app.get("/", function(req, res){
-    res.send("imagine getting this");
+    res.send("imagine getting this index page.");
+});
+
+app.get("/app", function(req,res){
+    res.json({message: "received from express"});
 });
 
 app.listen(port, function(){
