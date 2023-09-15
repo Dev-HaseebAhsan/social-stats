@@ -12,3 +12,9 @@ How to run the frontend -
 2. Change directory to frontend.
 3. Enter "npm i" in terminal.
 4. Enter "npm start" in terminal.
+
+How to run the backend - 
+1. Open terminal.
+2. Change directory to backend.
+3. Enter "npm i" in terminal.
+4. Enter "npm start" in terminal.
