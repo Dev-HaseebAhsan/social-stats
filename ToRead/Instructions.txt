@@ -1,1 +1,8 @@
-
+How to make a contribution: https://www.youtube.com/watch?v=Xg6C_ij99TI
+1. Fork repository.
+2. Create branch with name relevant to contribution.
+3. Make changes.
+4. Test changes.
+5. Commit changes.
+6. Push changes to your branch of your repository. 
+7. Create a pull request to the main branch.
