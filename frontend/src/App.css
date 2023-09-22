@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+/* General CSS */
+:root{
+  --bg: #000000;
+  --primary: #23a5cd;
+  --primary-accent: #5ec4e4;
+  --secondary: #05191f;
+  --secondary-accent: ;
+  --text-color: #dadce1;
+  --speed: 500ms;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: var(--bg);
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+/* REMINDER: Develop a functioning navbar that appears after scrolling past searchbar in the header */
+/* Header Content */
+.header-container{
+  background-color: transparent;
+  border-style: none;
+  padding: 24vh 0 37vh 0;
+}
+/* Logo + Site Description */
+.header-container .logo-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.header-container .logo-container .logo{
+  height: 15vh;
+  padding: auto;
+}
+.header-container .site-description{
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  text-overflow: inherit;
+  margin: 3vh 0 12vh 0;
+}
+/* Filter + Searchbar */
+.header-container .search{
+  display: flex;
+  justify-content: center;
+}
+.header-container .search .filter{
+  background-color: #05191f;
+  color: var(--text-color);
+  font-size: 1.75rem;
+  text-align-last: center;
+  padding: 0.4em 3rem;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  line-height: 1.2;
+}
+.header-container .search .filter option{
+  background-color: var(--primary-accent);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.header-container .search .search-bar{
+  display: inline-block;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Body Content */
+/* Things to include:
+- blocks of stat info from each platform supported on the site
+  - Statistics of total users on each platform
+  - total views in the history of each platform (maybe?) */
+.body-container{
+  background-color: var(--primary);
+  height: 100vh;
+  border-style: none;
+}
+/* Footer Content REMINDER: MAKE FOOTER A COMPONENT */
+.footer-container{
+  background-color: #000000;
+  height: 20vh;
+  border-style: none;
 }
