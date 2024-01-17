@@ -15,6 +15,7 @@ body{
   width: 100%;
 }
 p{
+  color: var(--text-color);
   margin: 0;
 }
 ul{
@@ -57,24 +58,28 @@ a{
   justify-content: center;
 }
 .header-container .search .filter{
-  background-color: #05191f;
-  color: var(--text-color);
-  font-size: 1.75rem;
-  text-align-last: center;
-  padding: 0.4em 3rem;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-  line-height: 1.2;
+  min-width: 200px;
+  max-width: auto;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-right: 20px;
 }
+
 .header-container .search .filter option{
   background-color: var(--primary-accent);
   cursor: pointer;
 }
 
-.header-container .search .search-bar{
+.header-container .search .search-bar-container{
   display: inline-block;
   
+}
+.header-container .search .search-bar-container .search-bar{
+  height: 3rem;
+  width: 500px;
+  text-align: left;
+  font-size: 1.2rem;
 }
 /* Body Content */
 /* Things to include:
@@ -82,13 +87,21 @@ a{
   - Statistics of total users on each platform
   - total views in the history of each platform (maybe?) */
 .body-container{
-  background-color: var(--primary);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
   height: 100vh;
   border-style: none;
+  padding: 15px;
 }
-/* Footer Content REMINDER: MAKE FOOTER A COMPONENT */
+.body-container .platform-wide-stats{
+  background-color: rgba(var(--secondary), 0.5);
+
+}
+/* Footer Content REMINDER: MAKE THE FOOTER INTO A COMPONENT */
 .footer-container{
-  background-color: #000000;
-  height: 20vh;
+  background-color: #00000089;
+  height: 30vh;
   border-style: none;
 }
